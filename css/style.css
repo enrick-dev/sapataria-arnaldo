@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;600;700;800;900&display=swap');
 * {
   font-family: 'Montserrat';
 }
@@ -40,35 +41,61 @@ nav {
 .containerHeader {
   display: grid;
   grid-template-columns: 1fr 55% 40% 1fr;
-  height: 100vh;
+  height: 90vh;
 }
 .containerHeaderText {
   grid-column: 1/3;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contentHeaderText {
   display: flex;
   flex-direction: column;
+  font-family: 'Martel Sans' ;
 }
 .contentHeaderText h1 {
-  font-size: 10rem;
+  font-size: 11rem;
+  font-weight: bold;
   text-transform: uppercase;
   color: #5c2e00;
 }
 .contentHeaderText h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   align-self: flex-end;
-  color: #3b3732;
+  color: #8a8074;
 }
 .contentHeaderText p {
-  font-size: 2rem;
+  font-size: 2.2rem;
   width: 60rem;
+  color: #4b463f;
+}
+
+.containerButtom {
+  width: 40rem;
+  align-self: flex-end;
+  margin-top: 2.5rem;
+}
+.containerButtom a {
+  text-decoration: none;
+  color: #5c2e00;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border: 0.2rem solid #5c2e00;
+  padding: 1.5rem;
+  transition: 0.1s;
+}
+.containerButtom a:hover {
+  color: #f1f1f1;
+  border: 0.2rem solid #f1f1f1;
+  background-color: #5c2e00;
 }
 
 
 .containerHeaderImg {
-  grid-column: 3;
-  
+  grid-column: 3/5;
+  background: url("../assets/imgs/background.jpg");
+  background-position: center;
+  background-size: cover;
 }
