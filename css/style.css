@@ -126,3 +126,16 @@ main {
 .secProduto {
   grid-row: 2/3;
 }
+
+/* Card */
+
+.contentCard {
+  display: flex;
+}
+.card {
+  width: 30rem;
+  height: 50rem;
+  background-color: rgb(65, 65, 65);
+  border-radius: 0.5rem;
+  margin: 10px;
+}
