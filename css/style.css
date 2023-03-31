@@ -123,9 +123,21 @@ main {
   text-align: center;
 }
 
+.contentFotoSapateiro {
+  position: absolute;
+}
+.fotoSapateiro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+
 .secProduto {
   grid-row: 2/3;
 }
+
 
 /* Card */
 
@@ -135,7 +147,8 @@ main {
 .card {
   width: 30rem;
   height: 50rem;
-  background-color: rgb(65, 65, 65);
+  background-color: #964b00;
   border-radius: 0.5rem;
   margin: 10px;
 }
+
