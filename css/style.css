@@ -144,7 +144,6 @@ main {
 
 .secProduto {
   grid-row: 4/6;
-
 }
 
 
@@ -152,11 +151,12 @@ main {
 
 .containerCard {
   height: 100%; 
-  background-color: red;
 }
 .contentCard {
   display: flex;
+  width: 100%;
   height: 100%;
+  justify-content: space-around;
 }
 .card {
   width: 30rem;
