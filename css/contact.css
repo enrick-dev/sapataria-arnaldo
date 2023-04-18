@@ -23,38 +23,47 @@ main {
     margin-top: 10rem;
     width: 80%;
     height: 100vh;
-    display: grid;
+    display: flex;
     background-color: var(--principal-background-color);
-  }
+}
+.containerForm {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5rem 60% 1fr;
+    grid-template-rows: 5rem 60% 40%;
+}
 
 
 
-  
+
 
 .contentForm {
-    width: 40rem;
-    height: 40rem;
+    grid-column: 2;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .contentTituloForm h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: var(--principal-color);
 }
 .contentTituloForm h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin-left: 1rem;
 }
 
 
 
 .contentForm form {
-    height: 100%;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 1rem;
     color: #4b463f;
 }
 
@@ -63,7 +72,7 @@ main {
     flex-direction: column;
 }
 .contentForm form div label {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
 }
 .contentForm form div label::before {
@@ -77,4 +86,5 @@ main {
 }
 .contentForm form div input {
     border: none;
+    width: 100%;
 }
