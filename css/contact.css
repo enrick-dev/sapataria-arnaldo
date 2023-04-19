@@ -30,21 +30,15 @@ main {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 5rem 60% 1fr;
-    grid-template-rows: 5rem 60% 40%;
+    grid-template-columns: 5rem 40% 20% 1fr;
+    grid-template-rows: 5rem 10rem 10rem 60% 1fr 5rem;
 }
 
 
 
-
-
-.contentForm {
+.contentTituloForm {
     grid-column: 2;
     grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 .contentTituloForm h1{
     font-size: 5rem;
@@ -57,9 +51,17 @@ main {
 }
 
 
+.contentForm {
+    grid-column: 2;
+    grid-row: 4/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .contentForm form {
-    height: 40rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,6 +76,8 @@ main {
 .contentForm form div label {
     font-size: 2rem;
     display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 .contentForm form div label::before {
     content: '';
@@ -86,5 +90,33 @@ main {
 }
 .contentForm form div input {
     border: none;
+    width: 40rem;
+    height: 3rem;
+    border-bottom: 1px solid var(--principal-color);
+    outline: none;
+}
+.contentForm form div:nth-child(4) textarea {
+    width: 40rem;
+    height: 20rem;
+    outline: none;
+}
+.contentForm form .btnFormContact {
+    width: 7.6rem;
+    height: 5rem;
+    align-self: flex-start;
+    border: none;
+    color: var(--principal-font-color);
+    background-color: var(--sub-principal-color);
+}
+
+.containerImgLoja {
+    grid-column: 4/5;
+    grid-row: 1/7;
+    position: relative;
+    background-size: coverz;
+}
+.containerImgLoja img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

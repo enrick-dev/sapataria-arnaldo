@@ -24,12 +24,12 @@
 
     <main>
         <div class="containerForm">
+            <div class="contentTituloForm">
+                <h1>Contato</h1>
+                <h3>Entre em contato conosco</h3>
+            </div>
+            
             <div class="contentForm">
-                <div class="contentTituloForm">
-                    <h1>Contato</h1>
-                    <h3>Entre em contato conosco</h3>
-                </div>
-                
                 <form action="">
                     <div>
                         <label for="name">Nome</label>
@@ -45,16 +45,48 @@
                     </div>
                     <div>
                         <label for="message">Mensagem</label>
-                        <input type="text" id="message" required>
+                        <textarea name="textareaMessage" id="message" required></textarea>
                     </div>
                     <div>
                         <label for="phone">Telefone</label>
                         <input type="text" id="phone">
                     </div>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="btnFormContact">
                 </form>
+            </div>
+
+            
+            <div class="containerImgLoja">
+                <img src="./assets/imgs/contact/loja.jpg" alt="imagem da loja">
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="containerFooter">
+          <div class="contentFooter">
+            <andress class="endereco">
+              <p>R. Forte do Lene, 52</p>
+              <p>Jd. Santa Adélia</p>
+              <p>São Paulo - SP</p>
+              <p>(11) 3371-1279</p>
+            </andress>
+            <div class="containerSocialIcons">
+              <div class="pgto">
+                <img src="./assets/social/facebook.svg" alt="Icone do Facebook" class="socialIcon">
+              </div>
+              <div class="social">
+                <img src="./assets/social/instagram.svg" alt="Icone do Instagram" class="socialIcon">
+              </div>
+              <div class="copyright">
+                <img src="./assets/social/linkedIn.svg" alt="Icone do Linkedin" class="socialIcon">
+              </div>
+            </div>
+          </div>
+          <div class="containerCopywriting">
+            <p>Copywriting by Enrick Santos</p>
+          </div>
+        </div>
+    </footer> 
 </body>
 </html>

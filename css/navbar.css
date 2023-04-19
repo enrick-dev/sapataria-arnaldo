@@ -3,10 +3,11 @@
   font-family: 'Montserrat';
 }
 :root {
-    --principal-color: #5c1a00;
-    --sub-principal-color: #962a00;
-    --principal-background-color: #e9e9e9;
-    --principal-font-color: #f1f1f1;
+  --principal-color: #5c1a00;
+  --sub-principal-color: #962a00;
+  --principal-background-color: #e9e9e9;
+  --sub-principal-background-color: #f1f1f1;
+  --principal-font-color: #f1f1f1;
 }
 
 nav {
