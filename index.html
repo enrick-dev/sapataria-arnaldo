@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra a excelência em sapatos na Sapataria Arnaldo! Qualidade, conforto e estilo em uma ampla seleção de sapatos elegantes. Atendimento personalizado e satisfação garantida.">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/scroolbar.css">
   <link rel="stylesheet" href="./css/index.css">
 
   <title>Sapataria do Arnaldo</title>
@@ -13,8 +17,8 @@
     <nav>
       <ul class="navTitulos">
         <li><a href="#">Home</li></a>
-        <li><a href="#">Contato</li></a>
-        <li><a href="#">Sobre nos</li></a>
+        <li><a href="./contact.html">Contato</li></a>
+        <li><a href="./about.html">Sobre nós</li></a>
       </ul>
     </nav>
 
@@ -35,16 +39,19 @@
     </header>
     <main>
       <div class="containerSections">
+
         <section class="secFilosofia">
+
           <div class="contentFotoSapateiro">
             <img src="./assets/imgs/perfil-sapateiro.jpg" alt="Foto do Sapateiro" class="fotoSapateiro">
           </div>
-          <div class="breatherBar"></div>
+
           <div class="containerFilosofia">
             <p> Na Sapataria Arnaldo, oferecemos uma seleção de sapatos de alta qualidade, duráveis, confortáveis e elegantes. Nosso compromisso com a satisfação do cliente é uma prioridade, e estamos empenhados em garantir uma experiência de compra tranquila e sem complicações. Também somos comprometidos com práticas comerciais éticas e sustentáveis, e estamos sempre em busca de novas maneiras de melhorar e aprimorar nossa seleção de sapatos. Venha nos visitar para encontrar o sapato perfeito para qualquer ocasião.</p>
           </div>
+
         </section>
-        
+
         <section class="secProduto">
           <div class="containerCard" id="produto" >
             <div class="contentCard">
@@ -52,25 +59,37 @@
                 <div class="containerCardImg">
                   <img src="./assets/card/sapato2.jpg" alt="Card 1">  <!-- object fit, position etc no css -->
                 </div>
-                <h1>Sapatos</h1>
+                <div class="conteudoCard">
+                  <h1>Sapatos</h1>
+                  <a href="./catalog.html"></a><button>Ver mais</button>
+                </div>
               </div>
               <div class="card card2">
                 <div class="containerCardImg">
                   <img src="./assets/card/bolsa.jpg" alt="Card 2">
                 </div>
-                <h1>Bolsas</h1>
+                <div class="conteudoCard">
+                  <h1>Bolsas</h1>
+                  <button>Ver mais</button>
+                </div>
               </div>
               <div class="card card3">
                 <div class="containerCardImg">
-                  <img src="./assets/card/" alt="Card 3">
+                  <img src="./assets/card/mochila.jpg" alt="Card 3">
                 </div>
-                <h1>Mochilas</h1>
+                <div class="conteudoCard">
+                  <h1>Mochilas</h1>
+                  <button>Ver mais</button>
+                </div>
               </div>
               <div class="card card4">
                 <div class="containerCardImg">
-                  <img src="./assets/card/" alt="Card 4">
+                  <img src="./assets/card/cinto.jpg" alt="Card 4">
                 </div>
-                <h1>Cintos</h1>
+                <div class="conteudoCard">
+                  <h1>Cintos</h1>
+                  <button>Ver mais</button>
+                </div>
               </div>
             </div>
           </div>
@@ -79,15 +98,30 @@
     </main>
     <!--  -->
     <footer>
-      <andress class="endereco">
-        <p>R. Forte do Lene, 52</p>
-        <p>Jd. Santa Adélia</p>
-        <p>São Paulo - SP</p>
-        <p>(11) 3371-1279</p>
-      </andress>
-      <div class="pgto"></div>
-      <div class="social"></div>
-      <div class="copyright"></div>
+      <div class="containerFooter">
+        <div class="contentFooter">
+          <andress class="endereco">
+            <p>R. Forte do Lene, 52</p>
+            <p>Jd. Santa Adélia</p>
+            <p>São Paulo - SP</p>
+            <p>(11) 3371-1279</p>
+          </andress>
+          <div class="containerSocialIcons">
+            <div class="pgto">
+              <img src="./assets/social/facebook.svg" alt="Icone do Facebook" class="socialIcon">
+            </div>
+            <div class="social">
+              <img src="./assets/social/instagram.svg" alt="Icone do Instagram" class="socialIcon">
+            </div>
+            <div class="copyright">
+              <img src="./assets/social/linkedIn.svg" alt="Icone do Linkedin" class="socialIcon">
+            </div>
+          </div>
+        </div>
+        <div class="containerCopywriting">
+          <p>Copywriting by Enrick Santos</p>
+        </div>
+      </div>
     </footer> 
 </body>
 </html>
