@@ -40,12 +40,12 @@ main {
     grid-column: 2;
     grid-row: 2;
 }
-.contentTituloForm h1{
+.contentTituloForm>h1{
     font-size: 5rem;
     font-weight: bold;
     color: var(--principal-color);
 }
-.contentTituloForm h3 {
+.contentTituloForm>h3 {
     font-size: 1.8rem;
     margin-left: 1rem;
 }
@@ -60,7 +60,7 @@ main {
     align-items: flex-start;
 }
 
-.contentForm form {
+.contentForm>form>{
     height: 60rem;
     display: flex;
     flex-direction: column;
@@ -69,17 +69,17 @@ main {
     color: #4b463f;
 }
 
-.contentForm form div {
+.contentForm>form>div {
     display: flex;
     flex-direction: column;
 }
-.contentForm form div label {
+.contentForm>form>div>label {
     font-size: 2rem;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
-.contentForm form div label::before {
+.contentForm>form>div>label::before {
     content: '';
     display: inline-block;
     align-self: center;
@@ -88,19 +88,19 @@ main {
     margin: 0rem 0.5rem;
     background-color: var(--principal-color);
 }
-.contentForm form div input {
+.contentForm>form>div>input {
     border: none;
     width: 40rem;
     height: 3rem;
     border-bottom: 1px solid var(--principal-color);
     outline: none;
 }
-.contentForm form div:nth-child(4) textarea {
+.contentForm>form>div:nth-child(4)>textarea {
     width: 40rem;
     height: 20rem;
     outline: none;
 }
-.contentForm form .btnFormContact {
+.contentForm>form>.btnFormContact {
     width: 7.6rem;
     height: 5rem;
     align-self: flex-start;
@@ -115,7 +115,7 @@ main {
     position: relative;
     background-size: coverz;
 }
-.containerImgLoja img{
+.containerImgLoja>img{
     width: 100%;
     height: 100%;
     object-fit: cover;

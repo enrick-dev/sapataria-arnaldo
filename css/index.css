@@ -37,18 +37,18 @@ body {
   flex-direction: column;
   font-family: 'Martel Sans' ;
 }
-.contentHeaderText h1 {
+.contentHeaderText>h1 {
   font-size: 11rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--principal-color);
 }
-.contentHeaderText h2 {
+.contentHeaderText>h2 {
   font-size: 2.5rem;
   align-self: flex-end;
   color: #8a8074;
 }
-.contentHeaderText p {
+.contentHeaderText>p {
   font-size: 2.2rem;
   width: 60rem;
   color: #4b463f;
@@ -59,7 +59,7 @@ body {
   align-self: flex-end;
   margin-top: 2.5rem;
 }
-.containerButtom a {
+.containerButtom>a {
   text-decoration: none;
   color: var(--principal-color);
   text-transform: uppercase;
@@ -68,7 +68,7 @@ body {
   padding: 1.5rem;
   transition: 0.1s;
 }
-.containerButtom a:hover {
+.containerButtom>a:hover {
   color: var(--principal-font-color);
   border: 0.2rem solid #f1f1f1;
   background-color: var(--principal-color);
@@ -158,13 +158,13 @@ main {
   justify-content: center;
   align-items: flex-end;
 }
-.containerCardImg img {
+.containerCardImg>img {
   width: 90%;
   height: 95%;
   object-fit: cover;
   border-radius:  0.5rem;
 }
-.card3 .containerCardImg img {
+.card3 .containerCardImg>img {
   object-position: bottom;
 }
 
@@ -176,13 +176,13 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.conteudoCard h1 {
+.conteudoCard>h1 {
   font-size: 2.8rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #3f3f3f;
 }
-.conteudoCard button {
+.conteudoCard>button {
   height: 3rem;
   padding: 0.2rem 1rem;
   border: none;

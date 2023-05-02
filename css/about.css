@@ -15,13 +15,58 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #e9e9e9;
+  background-color: var(--sub-principal-background-color);  
 }
 
 
+
 main {
-    font-family: 'Martel Sans';
-    height: 100vh;
-    width: 80%;
-    background-color: red;
-  }
+  font-family: 'Martel Sans';
+  margin-top: 10rem;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--principal-background-color);
+}
+.containerAbout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5rem 40% 20% 1fr;
+  grid-template-rows: 5rem 10rem 10rem 60% 1fr 5rem;
+}
+
+
+
+.contentTituloAbout {
+  grid-column: 2;
+  grid-row: 2;
+}
+.contentTituloAbout>h1{
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--principal-color);
+}
+.contentTituloAbout>h3 {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+
+.contentAbout {
+  grid-column: 2/4;
+  grid-row: 4/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.contentAbout>p {
+  font-size: 2.2rem;
+}
+
+/* Fix footer */
+
+footer {
+  margin-top: 0rem;
+}

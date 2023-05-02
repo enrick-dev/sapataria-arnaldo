@@ -60,7 +60,7 @@ footer {
     font-family: 'Martel Sans';
     color: var(--principal-font-color);
   }
-  .containerCopywriting p {
+  .containerCopywriting>p {
     align-self: flex-end;
     margin-right: 1rem;
   }
